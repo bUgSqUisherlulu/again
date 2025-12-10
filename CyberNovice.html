@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Cyber novice</title>
+<link rel="stylesheet" href="cyberStyle.css">
+<script src="https://kit.fontawesome.com/5e1df40b7e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class ="container">
+    <nav>
+        <h1 >.<span>P</span>recious,The cyber novice</h1>
+          <ul id="sidemenu">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#Contact">Contact</a></li>
+              <i class="fa-solid fa-x" onclick ="closemenu()"></i>
+   
+          </ul>
+          <i class="fa-solid fa-bars"onclick="openmenu()"></i>
+        </nav>	
+        </div>
+      </div>  
+      <div class="header-text">
+        <div class="home-col1">
+          <h1 >Hello <span> World!</span></h1>
+          <p>It's Precious Charlie ,the Cyber novice </p>
+        </div>
+        <div class ="home-col2">
+          <img src="pen.jpeg">
+        </div>
+        
+        </div>
+   </div> 
+   <div id="about">
+    <div class ="container">
+	    <div class="row">
+		   <div class="about-col1">
+		     <img src="Precious.jpeg">
+		   </div>
+		   <div class="about-col2">
+		   <h1 class="sub-title">About Me</h1>
+		   <p>Precious Charlie is a dedicated Information Security and Assurance student at the Harare Institute of Technology in Zimbabwe.
+		   With a strong interest in cybersecurity, she is actively developing her skills as a penetration tester.
+		   Driven by her passion for technology and her belief in gender equality in STEM fields,
+		   Precious is committed to contributing to a safer digital world.</p>
+		   <div class="tab-titles active-tab">
+		      <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+		      <p class="tab-links" onclick="opentab('experience')">Experience</p>
+		      <p class="tab-links" onclick="opentab('education')">Education</p>
+		   </div>
+		   <div class="tab-contents active-tab" id="skills">
+		      <ul>
+		        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+		        <li><span>Web Development</span><br>Web app Development</li>
+			    <li><span>Secure coding</span><br>Integrating secure coding practices in software development</li>
+		      </ul>
+		   </div>
+		   <div class="tab-contents" id="experience">
+		       <ul>
+		         <li><span>2023-Current</span><br>Harare Institute of Technology</li>
+		      </ul>
+		   </div>
+		   <div class="tab-contents" id="education">
+		       <ul>
+		         <li><span>2023-Current</span><br>HIT Belvedere</li>
+		         <li><span>2017-2022</span><br>Regina Mundi High School</li>
+				  <li><span>2009-2016</span><br>Dudley Hall Primary School</li>
+			
+		      </ul>
+		   </div>
+		   
+		</div>
+	</div>
+</div>	
+
+<div id="services">
+    <div class="container">
+	    <h1 class="sub-title">My Services</h1>
+		<div class="services-list">
+		<div>
+		<i class="fa-solid fa-code"></i>
+		<h2>Web Development</h2>
+		<p>Web development is the process of creating websites and web applications.<br>
+		It involves designing, building,
+		and maintaining online platforms that serve various purposes,
+		from simple informational sites to complex e-commerce platforms.</p>
+		<a href="#">Learn more</a>
+		</div>
+		<div>
+		<i class="fa-brands fa-app-store"></i>
+		<h2>App development</h2>
+	    <p>App development is the process of creating software
+		applications for various platforms like smartphones, tablets, 
+		computers, and even wearable devices.
+		It involves designing, coding, testing, 
+		and deploying applications that meet specific user needs and goals.</p>
+		<a href="#">Learn more</a>
+		</div>
+		<div>
+	   <i class="fa-solid fa-video"></i>
+		<h2>Content Creation</h2>
+		<p>Content creation is the process of developing and producing text,
+		images, videos, and other materials that are used to inform,
+		educate, or entertain visitors to a webpage.
+		High-quality content is essential for attracting and retaining visitors, 
+		improving search engine rankings, and establishing credibility.</p>
+		<a href="#">Learn more</a>
+		</div>
+		</div>
+	</div>	
+</div>
+	<!-------------Contact---------------------->
+	<div id ="Contact">
+	    <div class="container">
+	        <div class ="row">
+	            <div class="Contact-left">
+				<h1 class-="subtitle">Contact Me</h1>
+				    <p><i class="fa-solid fa-paper-plane"></i>rutendocharlie07@gmail.com</p>
+					<p><i class="fa-solid fa-phone"></i>0123456789</p>
+					<div class="social-icons">
+					<a href ="https://github.com/bUgSqUisherlulu"><i class="fa-brands fa-github"></i></a>
+					<a href ="https://linkedin.com/in/precious-charlie-261119293"><i class="fa-brands fa-linkedin"></i></a>
+					<a href =""><i class="fa-brands fa-instagram"></i></a>
+					
+					</div>
+					<a href="C:\Users\Lenovo\Desktop\web development\myportfolio\CV.pdf" download class ="btn btn2">Download CV</a>
+					</div>
+					<div class="Contact-right">
+						<form name="submit-to-google-sheet">
+						<input type="text" name="Name" placeholder="Your Name" required>
+						<input type="email" name="Email" placeholder="Your Email" required>
+						<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+						<button type="submit" class="btn btn2">Submit</button>
+						</form>
+						<span id="msg"></span>
+						</div> 
+				</div>
+				
+			</div>
+		</div>	
+		<div class="copyright">
+		<p>Copyright @Precious .Made with <i class="fa-solid fa-heart"></i> by The cyber novice</p>
+		</div>
+	</div>
+	
+
+
+
+<script> 
+  var tablinks=document.getElementsByClassName("tab-links");
+  var tabcontents=document.getElementsByClassName("tab-contents");
+  
+  function opentab(tabname){
+     for (tablink of tablinks){
+	     tablink.classList.remove("active-link");
+		 }
+		 
+	 for (tabcontent of tabcontents){
+	     tabcontent.classList.remove("active-tab");
+		 }	 
+	event.currentTarget.classList.add("active-link");	
+	document.getElementById(tabname).classList.add("active-tab");
+  }
+   
+	
+</script>
+
+<script>
+    var sidemenu= document.getElementById("sidemenu");
+	
+	function openmenu(){
+	    sidemenu.style.right="0";
+	}
+	
+	function closemenu(){
+	    sidemenu.style.right="-200px";
+	}
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxgycK8r6H4TgNGR6Anm9h0QUTbjCThnQf55SNKK3dladdIVEdeeSLsN9TTd1rs06ZD/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg =document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+	  msg.innerHTML="Message sent successfully"
+	  setTimeout(function(){
+	  msg.innerHTML=""
+	  },5000)
+	  form.reset()
+	})
+      .catch(error => console.error('Error!', error.message))
+  })
+</script> 
+
+</body>
+</html>
